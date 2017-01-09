@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Dice of Power");
+        toolbar.setTitle("Dice of Power!");
 
         configToolbar();
     }

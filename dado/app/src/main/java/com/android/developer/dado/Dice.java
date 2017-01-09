@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.NumberPicker;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -26,7 +25,6 @@ public class Dice extends Fragment {
     int randomLimit;
     int randomNumber;
     int numberPickerValue;
-    String pageName;
 
     public Dice(int randomLimit) {
         this.randomLimit = randomLimit;
