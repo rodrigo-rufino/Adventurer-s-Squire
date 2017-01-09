@@ -13,18 +13,19 @@ import android.widget.TextView;
 import java.util.Random;
 
 /**
- * Created by rodrigo.rufino on 06/01/2017.
+ * Created by rodrigo.rufino on 09/01/2017.
  */
 
-public class D8 extends Fragment{
+public class D10 extends Fragment{
     Button randomButton;
     NumberPicker numberPicker;
     TextView numberTextView;
     Random random = new Random();
-    int randomLimit = 8;
+    int randomLimit = 10;
     int randomNumber;
     int numberPickerValue;
 
+    //Overriden method onCreateView
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.d4, container, false);

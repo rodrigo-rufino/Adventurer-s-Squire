@@ -12,14 +12,14 @@
     <!-- our toolbar -->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:elevation="15dp"
+        android:elevation="9dp"
         app:titleTextColor="@color/colorTextHighlight"
-
         />
 
     <!-- our tablayout to display tabs  -->

@@ -34,16 +34,16 @@ public class Pager extends FragmentStatePagerAdapter {
                 D8 d8 = new D8();
                 return d8;
             case 3:
-                D4 d10 = new D4();
+                D10 d10 = new D10();
                 return d10;
             case 4:
-                D4 d12 = new D4();
+                D12 d12 = new D12();
                 return d12;
             case 5:
-                D4 d20 = new D4();
+                D20 d20 = new D20();
                 return d20;
             case 6:
-                D4 d100 = new D4();
+                D100 d100 = new D100();
                 return d100;
             default:
                 return null;
