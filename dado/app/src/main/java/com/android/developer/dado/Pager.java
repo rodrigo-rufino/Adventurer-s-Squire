@@ -25,25 +25,25 @@ public class Pager extends FragmentStatePagerAdapter {
         //Returning the current tabs
         switch (position) {
             case 0:
-                D4 d4 = new D4();
+                Dice d4 = new Dice(4);
                 return d4;
             case 1:
-                D6 d6 = new D6();
+                Dice d6 = new Dice(6);
                 return d6;
             case 2:
-                D8 d8 = new D8();
+                Dice d8 = new Dice(8);
                 return d8;
             case 3:
-                D10 d10 = new D10();
+                Dice d10 = new Dice(10);
                 return d10;
             case 4:
-                D12 d12 = new D12();
+                Dice d12 = new Dice(12);
                 return d12;
             case 5:
-                D20 d20 = new D20();
+                Dice d20 = new Dice(20);
                 return d20;
             case 6:
-                D100 d100 = new D100();
+                Dice d100 = new Dice(100);
                 return d100;
             default:
                 return null;

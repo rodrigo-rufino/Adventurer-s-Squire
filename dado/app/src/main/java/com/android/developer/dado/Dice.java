@@ -1,5 +1,8 @@
 package com.android.developer.dado;
 
+/**
+ * Created by rodrigo.rufino on 06/01/2017.
+ */
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -8,27 +11,39 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.NumberPicker;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import java.util.Random;
 
-/**
- * Created by rodrigo.rufino on 09/01/2017.
- */
+public class Dice extends Fragment {
 
-public class D10 extends Fragment{
+
     Button randomButton;
     NumberPicker numberPicker;
     TextView numberTextView;
     Random random = new Random();
-    int randomLimit = 10;
+    int randomLimit;
     int randomNumber;
     int numberPickerValue;
+    String pageName;
 
-    //Overriden method onCreateView
+    public Dice(int randomLimit) {
+        this.randomLimit = randomLimit;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.d4, container, false);
+        switch(randomLimit){
+            case 4:  view = inflater.inflate(R.layout.d4, container, false); break;
+            case 6:  view = inflater.inflate(R.layout.d6, container, false); break;
+            case 8:  view = inflater.inflate(R.layout.d8, container, false); break;
+            case 10:  view = inflater.inflate(R.layout.d10, container, false); break;
+            case 12:  view = inflater.inflate(R.layout.d12, container, false); break;
+            case 20:  view = inflater.inflate(R.layout.d20, container, false); break;
+            case 100:  view = inflater.inflate(R.layout.d100, container, false); break;
+        }
 
         randomButton = (Button) view.findViewById(R.id.roll_button);
         numberPicker = (NumberPicker) view.findViewById(R.id.number_picker);
