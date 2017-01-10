@@ -12,7 +12,7 @@ public class Pager extends FragmentStatePagerAdapter {
     //integer to count number of tabs
     int tabCount;
 
-    //Constructor to the class
+
     public Pager(FragmentManager fm, int tabCount) {
         super(fm);
         //Initializing tab count

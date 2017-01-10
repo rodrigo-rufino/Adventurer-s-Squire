@@ -26,6 +26,8 @@ public class Dice extends Fragment {
     int randomNumber;
     int numberPickerValue;
 
+    public Dice(){}
+
     public Dice(int randomLimit) {
         this.randomLimit = randomLimit;
     }
